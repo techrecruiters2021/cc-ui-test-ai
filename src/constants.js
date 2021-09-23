@@ -1,0 +1,1 @@
+export const SUCCESS_MSG = "Thank you for showing interest in GoInterview! Our beta program is currently full. We will contact you when more spots are open. Don’t worry, we have not and we will not process your Credit Card payment."

@@ -1,0 +1,102 @@
+.container {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.formDiv {
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+  box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+}
+
+.alert {
+  width: calc(100% - 6px);
+  max-width: 612px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.alert.alert-danger {
+  -webkit-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+  box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+}
+
+.alert.alert-warning {
+  -webkit-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+  box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+}
+
+.creditCard {
+    margin-bottom: 2rem;
+}
+
+.formTitle {
+  width: 100%;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.formTitle + h5 {
+  margin-bottom: 2rem;
+  font-size: 0.80rem;
+}
+
+.formTitle + h4 {
+  font-size: 1.50rem;
+}
+
+.formTitle + h3 {
+  font-size: 1.75rem;
+}
+
+.formLogo {
+  width: 160px;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-primary, .btn-primary:disabled {
+  background-color: #5A4AE3;
+  border-color: #5A4AE3;
+}
+
+.btn-primary:disabled {
+  pointer-events: none;
+}
+
+.btn-primary:focus, .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #4A87E3;
+  border-color: #4A87E3;
+}
+
+.safeImg {
+  max-width: 100%;
+}
+
+.purchaseNotes p {
+  margin-bottom: 0.25rem;
+  font-size: 0.90rem;
+}
+
+.purchaseNotes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.purchaseNotes p:first-child {
+  font-weight: 700;
+}
