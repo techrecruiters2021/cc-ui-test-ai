@@ -5,6 +5,24 @@ import {Firebase} from './firebase'
 
 const api = new Firebase();
 
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  // Google ads conversion event (i.e. they paid)
+  window?.gtag?.('event', 'conversion', {
+      'send_to': `${process.env.REACT_APP_GADS_ID}/WSFbCLT74vYCEPT1q5Mo`,
+      'transaction_id': '',
+      'event_callback': callback
+  });
+  return false;
+}
+
+
+
+
 const useForm = () => {
     const [values, setValues] = useState({
         cardName: '',
@@ -43,6 +61,8 @@ const useForm = () => {
             value: 1,
             nonInteraction: false
           });
+
+          gtag_report_conversion();
 
           api.firebase.firestore().collection('app').doc('payments').set({
             [`${values.cardName}-${new Date().getTime()}`]: {
